@@ -1,0 +1,149 @@
+anteil:
+  parser_type: anteil
+  plot_type: bar_interactive
+
+growth_bubble_interactive:
+  parser_type: growth
+  plot_type: bubble_interactive
+  filters:
+    single_choice:
+      individual: nach Branche
+      by_company_size: nach Betriebsgröße
+  filters_defaults:
+    single_choice: individual
+
+base_line_interactive:
+  parser_type: base
+  plot_type: line_interactive
+  filters:
+    single_choice:
+      fue_ausgaben_mio: FuE-Ausgaben in Mio. €
+      innovations_ausgaben_mio: Innovationsausgaben in Mio. €
+      umsatz_mio_produkt: Umsatz mit Produktneuheiten in Mio. €
+      umsatz_mio_markt: Umsatz mit Marktneuheiten in Mio. €
+      anzahl_unternehmen_insgesamt: Anzahl aller Unternehmen
+      anzahl_innovative_unternehmen: Anzahl innovationsaktiven Unternehmen
+      anzahl_innovatoren: Anzahl der Innovatoren
+    multi_choice:
+      nahrung: Nahrung/Getränke/Tabak
+      pharma: Pharma/Chemie/Kunststoff
+      holz: Holz/Papier/Druck
+      metall: Metall/Glas/Steinwaren
+      elektroindustrie: Elektroindustrie/Instrumententechnik
+      fahrzeugbau: Maschinen-/Fahrzeugbau
+      sonstige_konsumgueter: sonstige Konsumgüter
+      energie: Energie/Wasser/Entsorgung
+      telekommunikation: Verlage/Film/Rundfunk/Telekommunikation
+      software: Software/Datenverarbeitung
+      finanz: Finanzdienstleistungen
+      unternehmensberatung: Unternehmensberatung
+      architektur: Architektur-/Ingenieurbüros/techn. Labore
+      forschung: Forschung und Entwicklung
+      kreativ: Kreativdienstleistungen
+  filters_defaults:
+    single_choice: fue_ausgaben_mio
+
+shares_pie_interactive:
+  parser_type: shares
+  plot_type: pie_interactive
+  filters:
+    single_choice:
+      - "2012"
+      - "2021"
+    single_choice_highlight:
+      - Maschinen-/Fahrzeugbau
+      - Elektroindustrie/Instrumententechnik
+      - Pharma/Chemie/Kunststoff
+      - Software/Datenverarbeitung
+      - restliche Branchen
+  filters_defaults:
+    single_choice: "2012"
+    single_choice_highlight: Maschinen-/Fahrzeugbau
+
+fue_pie_interactive:
+  parser_type: fue
+  plot_type: pie_interactive
+  filters:
+    single_choice:
+      - "2011"
+      - "2020"
+    single_choice_highlight:
+      - Wirtschaft
+      - Hochschulen
+      - Staat
+  filters_defaults:
+    single_choice: "2011"
+    single_choice_highlight: Wirtschaft
+
+coop_partner_bar_interactive:
+  parser_type: bar
+  sheet_key_regex: coop_partner
+  plot_type: bar_interactive
+  filters:
+    single_choice:
+      - "2012"
+      - "2020"
+    single_choice_2:
+      insgesamt: insgesamt
+      Hochschulen: mit Hochschulen
+      staatl. Forschung: mit staatlicher Forschung
+      Kunden (privatwirtschaftl.): mit Kunden (privatwirtschaftlich)
+      Lieferanten: mit Lieferanten
+      Wettbewerber: mit Wettbewerber
+  filters_defaults:
+    single_choice: "2012"
+    single_choice_2: insgesamt
+
+coop_region_bar_interactive:
+  parser_type: bar
+  sheet_key_regex: coop_region
+  plot_type: bar_interactive
+  filters:
+    single_choice:
+      - "2012"
+      - "2020"
+    single_choice_2:
+      - der Region
+      - anderen Regionen in Deutschland
+      - anderen europäischen Ländern
+      - den USA
+      - Asien
+      - anderen Ländern
+  filters_defaults:
+    single_choice: "2012"
+    single_choice_2: der Region
+
+protection_bar_interactive:
+  parser_type: bar
+  sheet_key_regex: protection
+  plot_type: bar_interactive
+  filters:
+    single_choice:
+      - "2014"
+      - "2020"
+    single_choice_2:
+      Anmeldung von Patenten: Anmeldung von Patenten
+      Anmeldung von Gebrauchs-mustern: Anmeldung von Gebrauchsmustern
+      Eintragung von Geschmacks-mustern: Eintragung von Geschmacksmustern
+      Eintragung von Marken: Eintragung von Marken
+      Geltend-machung von Urheber-rechten: Geltendmachung von Urheberrechten
+  filters_defaults:
+    single_choice: "2014"
+    single_choice_2: Anmeldung von Patenten
+
+public_funding_bar_interactive:
+  parser_type: bar
+  sheet_key_regex: public_funding
+  plot_type: bar_interactive
+  filters:
+    single_choice:
+      - "2012"
+      - "2020"
+    single_choice_2:
+      - insgesamt
+      - vom Land
+      - vom Bund
+      - von der EU
+  filters_defaults:
+    single_choice: "2012"
+    single_choice_2: insgesamt
