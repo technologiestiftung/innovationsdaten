@@ -100,8 +100,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tbody>
     <tr>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/guadiromero"><img src="https://avatars.githubusercontent.com/u/315106?v=4?s=64" width="64px;" alt="Guadalupe Romero"/><br /><sub><b>Guadalupe Romero</b></sub></a><br /><a href="https://github.com/technologiestiftung/innovationsdaten/commits?author=guadiromero" title="Code">💻</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://fabianmoronzirfas.me/"><img src="https://avatars.githubusercontent.com/u/315106?v=4?s=64" width="64px;" alt="Fabian Morón Zirfas"/><br /><sub><b>Fabian Morón Zirfas</b></sub></a><br /><a href="https://github.com/technologiestiftung/innovationsdaten/commits?author=ff6347" title="Documentation">📖</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/guadiromero"><img src="https://avatars.githubusercontent.com/u/guadiromero" width="64px;" alt="Guadalupe Romero"/><br /><sub><b>Guadalupe Romero</b></sub></a><br /><a href="https://github.com/technologiestiftung/innovationsdaten/commits?author=guadiromero" title="Code">💻</a></td>
     </tr>
   </tbody>
 </table>
